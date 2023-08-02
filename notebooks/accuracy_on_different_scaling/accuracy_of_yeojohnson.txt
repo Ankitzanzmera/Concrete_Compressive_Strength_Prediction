@@ -1,0 +1,72 @@
+Linear_Regression
+MOdel Training Performace
+Mean Squared Error :  45.79076459499859
+Mean Absolute Error : 5.2099412530992435
+R2_Square : 0.8140178000666117
+===================================
+
+
+Lasso
+MOdel Training Performace
+Mean Squared Error :  53.36552157050109
+Mean Absolute Error : 5.62343729944599
+R2_Square : 0.7832524267708226
+===================================
+
+
+ridge
+MOdel Training Performace
+Mean Squared Error :  45.780924054535504
+Mean Absolute Error : 5.208935566359583
+R2_Square : 0.8140577680684576
+===================================
+
+
+Elasticnet
+MOdel Training Performace
+Mean Squared Error :  76.80470693678329
+Mean Absolute Error : 7.106300216535915
+R2_Square : 0.6880526348996081
+===================================
+
+
+Decision_Tree
+MOdel Training Performace
+Mean Squared Error :  52.19078908333333
+Mean Absolute Error : 4.642083333333333
+R2_Square : 0.7880236799750232
+===================================
+
+
+SVR
+MOdel Training Performace
+Mean Squared Error :  57.80982520467619
+Mean Absolute Error : 5.63734653334478
+R2_Square : 0.7652015954652865
+===================================
+
+
+Random_Forest
+MOdel Training Performace
+Mean Squared Error :  19.77475907315107
+Mean Absolute Error : 3.2927298825396805
+R2_Square : 0.9196835163573779
+===================================
+
+
+k_nearest
+MOdel Training Performace
+Mean Squared Error :  37.27834440000001
+Mean Absolute Error : 4.4182266666666665
+R2_Square : 0.8485915541549232
+===================================
+
+
+Xgboost
+MOdel Training Performace
+Mean Squared Error :  17.237958716131615
+Mean Absolute Error : 2.770846897951762
+R2_Square : 0.9299868977348928
+===================================
+
+
