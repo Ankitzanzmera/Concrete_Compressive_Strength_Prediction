@@ -1,0 +1,4 @@
+[ 2023-08-03 22:13:51,780 ] 22 - root - INFO - Data Injestion Started
+[ 2023-08-03 22:13:51,868 ] 26 - root - INFO - Dataset Read as Pandas Data Frame
+[ 2023-08-03 22:13:51,897 ] 31 - root - INFO - reached Train Test Split
+[ 2023-08-03 22:13:51,934 ] 36 - root - INFO - Train Test Split Done
