@@ -7,34 +7,31 @@ from src.logger import logging
 from src.exception import CustomException
 from sklearn.model_selection import train_test_split
 
-
 @dataclass
-class DataInjestionconfig:
+class DataInjestionConfig:
     raw_data_path = os.path.join('artifacts','raw.csv')
     train_data_path = os.path.join('artifacts','train.csv')
     test_data_path = os.path.join('artifacts','test.csv')
 
-class DataIngestion:
+class DataInjestion:
     def __init__(self):
-        self.injestion_config = DataInjestionconfig()
+        self.injestion_config = DataInjestionConfig()
 
     def initiate_data_injestion(self):
-        logging.info('Data Injestion Started')
-
         try:
             df = pd.read_csv(os.path.join('notebooks\data','concrete_data.csv'))
-            logging.info('Dataset Read as Pandas Data Frame')
-
-            os.makedirs(os.path.dirname(self.injestion_config.raw_data_path),exist_ok=True)
+            logging.info('Dataset load successfully')
+            os.makedirs(os.path.dirname(self.injestion_config.raw_data_path,),exist_ok=True)
             df.to_csv(self.injestion_config.raw_data_path,index = False)
 
-            logging.info('reached Train Test Split')
-            train_set,test_set = train_test_split(df,test_size=0.3,random_state=42)
+            train_data,test_data = train_test_split(df,test_size=0.3,random_state=42)
+            logging.info('Train Test Split Done ')
 
-            train_set.to_csv(self.injestion_config.train_data_path)
-            test_set.to_csv(self.injestion_config.test_data_path)
-            logging.info('Train Test Split Done')
-            logging.info('Whole Data Injestion is Done...')
+            train_data.to_csv(self.injestion_config.train_data_path)
+            test_data.to_csv(self.injestion_config.test_data_path)
+
+            logging.info('All Dataset are stored in Artifacts Folder')
+            logging.info('Data Injestion is Done')
 
             return (
                 self.injestion_config.train_data_path,
@@ -42,5 +39,5 @@ class DataIngestion:
             )
 
         except Exception as e:
-            logging.info('Error Occured in Data Injestion Config')
+            logging.info('Exception Occurred at Data Injestion file')
             raise CustomException(e,sys)
