@@ -1,0 +1,3 @@
+[ 2023-08-04 17:52:45,573 ] 23 - root - INFO - Dataset load successfully
+[ 2023-08-04 17:52:45,574 ] 48 - root - INFO - Exception Occurred at Data Injestion file
+[ 2023-08-04 17:52:45,574 ] 19 - root - INFO - Error Occurred at training pipeline file

@@ -27,16 +27,22 @@ class DataInjestion:
             train_data,test_data = train_test_split(df,test_size=0.3,random_state=42)
             logging.info('Train Test Split Done ')
 
-            train_data.to_csv(self.injestion_config.train_data_path)
-            test_data.to_csv(self.injestion_config.test_data_path)
+            train_data.to_csv(self.injestion_config.train_data_path,index = False)
+            test_data.to_csv(self.injestion_config.test_data_path,index = False)
 
             logging.info('All Dataset are stored in Artifacts Folder')
             logging.info('Data Injestion is Done')
+
+            def cate_num_feature():
+                cate_features = df.columns[df.dtypes == 'object']
+                num_features = df.columns[df.dtypes != 'object']
+                return cate_features,num_features
 
             return (
                 self.injestion_config.train_data_path,
                 self.injestion_config.test_data_path
             )
+
 
         except Exception as e:
             logging.info('Exception Occurred at Data Injestion file')

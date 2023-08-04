@@ -1,0 +1,37 @@
+import pickle
+import sys
+import os
+sys.path.append(os.getcwd())
+import pandas as pd
+from src.exception import CustomException
+from src.logger import logging
+
+def cate_num_feature():
+    try:
+        logging.info('Separation of Categorical and numerical Columns are initiated')
+        df = pd.read_csv(os.path.join('notebooks\data','concrete_data.csv'))
+        cate_features = df.columns[df.dtypes == 'object']
+        num_features = df.columns[df.dtypes != 'object']
+
+        return cate_features,num_features
+
+    except Exception as e:
+        logging.info('Exception in the utils file and at cate_num_feature')
+        raise CustomException(e,sys)
+
+def save_object(file_path,obj):
+    try:
+        dir_path = os.path.dirname(file_path)
+        os.makedirs(dir_path,exist_ok=True)
+        with open(file_path,'wb') as file_obj:
+            pickle.dump(obj,file_obj)
+
+    except Exception as e:
+        logging.info('Exception occurred at utils : save_object')
+        raise CustomException(e,sys)
+
+
+if __name__=="__main__":
+    logging.info('Code Run start')
+    print(cate_num_feature())
+
