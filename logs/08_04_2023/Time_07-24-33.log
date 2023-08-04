@@ -1,4 +1,0 @@
-[ 2023-08-04 07:24:36,267 ] 63 - root - INFO - Dataset load successfully
-[ 2023-08-04 07:24:36,321 ] 68 - root - INFO - Train Test Split Done 
-[ 2023-08-04 07:24:36,336 ] 73 - root - INFO - All Dataset are stored in Artifacts Folder
-[ 2023-08-04 07:24:36,337 ] 74 - root - INFO - Data Injestion is Done

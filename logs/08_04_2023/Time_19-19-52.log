@@ -1,0 +1,19 @@
+[ 2023-08-04 19:19:56,074 ] 23 - root - INFO - Dataset load successfully
+[ 2023-08-04 19:19:56,097 ] 28 - root - INFO - Train Test Split Done 
+[ 2023-08-04 19:19:56,116 ] 33 - root - INFO - All Dataset are stored in Artifacts Folder
+[ 2023-08-04 19:19:56,116 ] 34 - root - INFO - Data Injestion is Done
+[ 2023-08-04 19:19:56,116 ] 14 - root - INFO - Step 1 : Data Injestion Completed
+[ 2023-08-04 19:19:56,149 ] 64 - root - INFO - load of train and test Data is Completed
+[ 2023-08-04 19:19:56,149 ] 65 - root - INFO - obtaining make_pipeline object
+[ 2023-08-04 19:19:56,149 ] 24 - root - INFO - creating of preprocessing pipelinea are Started
+[ 2023-08-04 19:19:56,149 ] 12 - root - INFO - Separation of Categorical and numerical Columns are initiated
+[ 2023-08-04 19:19:56,158 ] 26 - root - INFO - Got Categorical and Numerical Columns
+[ 2023-08-04 19:19:56,159 ] 27 - root - INFO - Making of pipelines are intiated
+[ 2023-08-04 19:19:56,159 ] 53 - root - INFO - Pipeline Creating Completed
+[ 2023-08-04 19:19:56,161 ] 77 - root - INFO - Separation of train and tests are completed
+[ 2023-08-04 19:19:56,162 ] 78 - root - INFO - Applying preprcessing pipeline on train and test data
+[ 2023-08-04 19:19:56,175 ] 83 - root - INFO - preprocces Complete
+[ 2023-08-04 19:19:56,177 ] 19 - root - INFO - Step 2 :Data Transformation Completed
+[ 2023-08-04 19:19:56,368 ] 27 - root - INFO - Model Report : {'Mean_squared_error': 24.48309519001211, 'Mean_Absolute_error': 3.0371040161527865, 'R2_Score': 0.9095143247608739}
+[ 2023-08-04 19:19:56,374 ] 34 - root - INFO - Model Pickle File is saved
+[ 2023-08-04 19:19:56,375 ] 23 - root - INFO - Step 3 :Model Training is Done
