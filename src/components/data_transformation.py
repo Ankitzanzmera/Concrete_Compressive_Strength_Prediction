@@ -26,13 +26,13 @@ class DataTransformation:
             logging.info('Got Categorical and Numerical Columns')
             logging.info('Making of pipelines are intiated')
 
-            cate_pipeline = Pipeline(
-                steps = [
-                    ('cate_imputer',SimpleImputer(strategy='most_frequent')),
-                    ('OneHotEncoder',OneHotEncoder()),
-                    ('cate_scaler',StandardScaler())
-                ]
-            )
+            # cate_pipeline = Pipeline(
+            #     steps = [
+            #         ('cate_imputer',SimpleImputer(strategy='most_frequent')),
+            #         ('OneHotEncoder',OneHotEncoder()),
+            #         ('cate_scaler',StandardScaler())
+            #     ]
+            # )
 
             num_pipeline = Pipeline(
                 steps=[
@@ -40,15 +40,16 @@ class DataTransformation:
                     ('num_scaler',StandardScaler())
                 ]
             )
-
-            preprocessor = ColumnTransformer(
-                [
-                    ('cate_pipeline',cate_pipeline,cate_feature),
-                    ('num_pipeline',num_pipeline,num_feature)
-                ]
-            )
+            #
+            # preprocessor = ColumnTransformer(
+            #     [
+            #         ('cate_pipeline',cate_pipeline,cate_feature),
+            #         ('num_pipeline',num_pipeline,num_feature)
+            #     ],
+            #     remainder='passthrough'
+            # )
             logging.info('Pipeline Creating Completed')
-            return preprocessor
+            return num_pipeline
 
         except Exception as e:
             logging.info('Exception occurred At Data Transformation file : make_preprocessing_pipeline')
@@ -66,10 +67,10 @@ class DataTransformation:
             target_col = 'concrete_compressive_strength'
 
             X_train = train_df.drop(target_col,axis = 1)
-            y_train = train_df[target_col]
+            y_train = train_df[train_df.columns[-1]]
 
             X_test = test_df.drop(target_col,axis = 1)
-            y_test = test_df.drop[target_col]
+            y_test = test_df[test_df.columns[-1]]
 
             logging.info('Separation of train and tests are completed')
             logging.info('Applying preprcessing pipeline on train and test data')
