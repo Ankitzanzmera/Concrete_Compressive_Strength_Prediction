@@ -26,6 +26,8 @@ class DataTransformation:
             logging.info('Got Categorical and Numerical Columns')
             logging.info('Making of pipelines are intiated')
 
+            ### if datasets doesn't have any categorical column then don't make categorical pipeline otherwise it will throw error.
+
             # cate_pipeline = Pipeline(
             #     steps = [
             #         ('cate_imputer',SimpleImputer(strategy='most_frequent')),
