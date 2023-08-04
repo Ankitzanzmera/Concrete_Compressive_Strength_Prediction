@@ -1,0 +1,11 @@
+[ 2023-08-04 22:05:51,132 ] 187 - werkzeug - WARNING -  * Debugger is active!
+[ 2023-08-04 22:05:51,139 ] 187 - werkzeug - INFO -  * Debugger PIN: 269-792-859
+[ 2023-08-04 22:06:17,224 ] 187 - werkzeug - INFO - 127.0.0.1 - - [04/Aug/2023 22:06:17] "[33mGET /index.html HTTP/1.1[0m" 404 -
+[ 2023-08-04 22:06:17,480 ] 187 - werkzeug - INFO - 127.0.0.1 - - [04/Aug/2023 22:06:17] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[ 2023-08-04 22:06:31,103 ] 187 - werkzeug - INFO - 127.0.0.1 - - [04/Aug/2023 22:06:31] "GET / HTTP/1.1" 200 -
+[ 2023-08-04 22:06:35,506 ] 187 - werkzeug - INFO - 127.0.0.1 - - [04/Aug/2023 22:06:35] "[33mGET /form.html HTTP/1.1[0m" 404 -
+[ 2023-08-04 22:06:51,738 ] 187 - werkzeug - INFO - 127.0.0.1 - - [04/Aug/2023 22:06:51] "[35m[1mGET /predict HTTP/1.1[0m" 500 -
+[ 2023-08-04 22:06:52,144 ] 187 - werkzeug - INFO - 127.0.0.1 - - [04/Aug/2023 22:06:52] "GET /predict?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+[ 2023-08-04 22:06:52,154 ] 187 - werkzeug - INFO - 127.0.0.1 - - [04/Aug/2023 22:06:52] "GET /predict?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+[ 2023-08-04 22:06:52,342 ] 187 - werkzeug - INFO - 127.0.0.1 - - [04/Aug/2023 22:06:52] "GET /predict?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+[ 2023-08-04 22:06:52,541 ] 187 - werkzeug - INFO - 127.0.0.1 - - [04/Aug/2023 22:06:52] "[36mGET /predict?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -

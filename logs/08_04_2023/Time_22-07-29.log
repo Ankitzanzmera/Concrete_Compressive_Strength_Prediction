@@ -1,0 +1,4 @@
+[ 2023-08-04 22:07:31,268 ] 187 - werkzeug - WARNING -  * Debugger is active!
+[ 2023-08-04 22:07:31,281 ] 187 - werkzeug - INFO -  * Debugger PIN: 269-792-859
+[ 2023-08-04 22:07:32,091 ] 187 - werkzeug - INFO - 127.0.0.1 - - [04/Aug/2023 22:07:32] "GET /predict HTTP/1.1" 200 -
+[ 2023-08-04 22:09:28,202 ] 187 - werkzeug - INFO - 127.0.0.1 - - [04/Aug/2023 22:09:28] "GET /predict?cement=252.5&blast_furnace_slag=0&fly_ash=0&water=185.7&superplasticizer=0&coarse_aggregate=1111.6&fine_aggregate=784.3&age=28 HTTP/1.1" 200 -

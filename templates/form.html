@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Enter All The Detail To Predict Concrete Compressive Strength</h1>
+    <br>
+    <br>
+    <form action="{{url_for('predict_pipeline')}}">
+        <div>
+            <label for="cement">cement : </label>
+            <input type="text" name="cement" id="cement" placeholder="Enter Cement Value (float)">
+        </div>
+        <br>
+        <div>
+            <label for="blast_furnace_slag">blast_furnace_slag : </label>
+            <input type="text" name="blast_furnace_slag" id="blast_furnace_slag" placeholder="Enter blast_furnace_slag Value (float)">
+        </div>
+        <br>
+        <div>
+            <label for="fly_ash">fly_ash : </label>
+            <input type="text" name="fly_ash" id="fly_ash" placeholder="Enter fly_ash Value (float)">
+        </div>
+        <br>
+        <div>
+            <label for="water">water : </label>
+            <input type="text" name="water" id="water" placeholder="Enter water Value (float)">
+        </div>
+        <br>
+        <div>
+            <label for="superplasticizer">superplasticizer : </label>
+            <input type="text" name="superplasticizer" id="superplasticizer" placeholder="Enter superplasticizer Value (float)">
+        </div>
+        <br>
+        <div>
+            <label for="coarse_aggregate">coarse_aggregate : </label>
+            <input type="text" name="coarse_aggregate" id="coarse_aggregate" placeholder="Enter coarse_aggregate Value (float)">
+        </div>
+        <br>
+        <div>
+            <label for="fine_aggregate">fine_aggregate : </label>
+            <input type="text" name="fine_aggregate" id="fine_aggregate" placeholder="Enter fine_aggregate Value (float)">
+        </div>
+        <br>
+        <div>
+            <label for="age">age : </label>
+            <input type="text" name="age" id="age" placeholder="Enter age Value (float)">
+        </div>
+        <br>
+        <div>
+            <input type="submit">
+            <input type="reset">
+        </div>
+    </form>
+
+    <br><br>
+    <p>result = <b>{{final_result}}</b></p>
+
+</body>
+</html>

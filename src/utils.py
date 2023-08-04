@@ -43,6 +43,15 @@ def evaluate_model(y_test,y_pred):
         logging.info('Error occurred at utils.py : evaluate_model')
         raise CustomException(e,sys)
 
+def load_object(path):
+    try:
+        with open(path,'rb') as file_obj:
+            return pickle.load(e,sys)
+    except Exception as e:
+        logging.info('Exception occurred during loading a Object')
+        raise CustomException(e,sys)
+
+
 
 if __name__=="__main__":
     logging.info('Code Run start')
