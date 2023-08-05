@@ -46,7 +46,7 @@ def evaluate_model(y_test,y_pred):
 def load_object(path):
     try:
         with open(path,'rb') as file_obj:
-            return pickle.load(e,sys)
+            return pickle.load(file_obj)
     except Exception as e:
         logging.info('Exception occurred during loading a Object')
         raise CustomException(e,sys)
