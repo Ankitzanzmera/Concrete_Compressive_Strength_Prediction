@@ -33,11 +33,6 @@ class DataInjestion:
             logging.info('All Dataset are stored in Artifacts Folder')
             logging.info('Data Injestion is Done')
 
-            def cate_num_feature():
-                cate_features = df.columns[df.dtypes == 'object']
-                num_features = df.columns[df.dtypes != 'object']
-                return cate_features,num_features
-
             return (
                 self.injestion_config.train_data_path,
                 self.injestion_config.test_data_path

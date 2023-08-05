@@ -66,8 +66,6 @@ class DataTransformation:
 
             preprocessing_obj = self.make_preprocessing_pipeline()
 
-            target_col = 'concrete_compressive_strength'
-
             X_train = train_df.drop(target_col,axis = 1)
             y_train = train_df[train_df.columns[-1]]
 
